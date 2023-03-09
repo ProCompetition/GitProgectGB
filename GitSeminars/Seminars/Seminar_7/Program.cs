@@ -1,181 +1,195 @@
-﻿//     // Task1 
-
-// int[,] create2DRandomArray(int rows, int columns, int minValue, int maxValue)
+﻿// // Задача № 1. Задайте двумерный массив размером MxN, заполненный целыми числами.
+ 
+// int [,] Create2DRandomArray(int colums, int rows, int minValue, int maxValue)   // ,-  указывает что массив двумерный, colums - столбы, rows - строки
 // {
-//     int[,] new2DArray = new int[rows,columns];
-//     for(int i = 0; i < rows; i++)
+//     int[,] newArray = new int [rows, colums]; // выделение места под массив, размер массива указывается столбцы на строки
+//     for (int a = 0; a < rows; a++)  // перемещение по рядам;
 //     {
-//         for( int j = 0; j < columns; j++)
+//         for (int b = 0; b < colums; b++) // перемещение по строкам
 //         {
-//             new2DArray[i,j] = new Random().Next(minValue, maxValue+1);
+//             newArray[a, b] = new Random().Next(minValue, maxValue+1);
 //         }
 //     }
-//     return new2DArray;
-// }
-
-// void print2DRandomArray(int[,] array)
+//     return newArray;
+// }   // Метод для создания и заполнения двумерного массива
+    
+// void Show2dArray(int[,] array)
 // {
-//     for(int i = 0; i < array.GetLength(0); i++)
+//     for (int a = 0; a < array.GetLength(0); a++) // 0 указывает на строку
 //     {
-//         for( int j = 0; j < array.GetLength(1); j++)
+//         for (int b = 0; b < array.GetLength(1); b++) // 1 указывает на столбец
 //         {
-//             Console.Write($"{array[i,j]} ");
-//         }
-//         Console.WriteLine("");
-
+//             Console.Write(array[a, b] + " ");   // выводит наш массив в терминал "" указывает на пробел в сообщении
+//         } // функция Write идет прямо по строке, функция WriteLine Начинает идти с новой строки
+//         Console.WriteLine(); // без этой строки массив указывается в одну строку
 //     }
-// }
+//     Console.WriteLine("");    // при необходимости вывода более одного массива, создает пространство между массивами.
+// }   // метод для вывода двумерного массива
 
-// Console.WriteLine("Input please rows quantity of 2way array");
-//  int n = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("Input please columns quantity of 2way array");
-//  int m = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("Input please minimum number of 2way array");
-//  int min = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("Input please maximum number of 2way array");
-//  int max = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input numbers of rows: ");
+// int rows = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input numbers of colums: ");
+// int colums = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input minimal value of array element");
+// int minValue = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input maximal value of array element");
+// int maxValue = Convert.ToInt32(Console.ReadLine());
+// // Строки 28-35 запрос у пользователя информации
 
-//  int[,] arrayFilled = create2DRandomArray(n, m, min, max);
-//  print2DRandomArray(arrayFilled);
+// int [,] array = Create2DRandomArray(rows, colums, minValue, maxValue);
+// Show2dArray(array);
 
-//     // Task2
 
-// int[,] create2nmArray(int rows, int columns)
+// Задача № 2 
+// Задайте двумерный массив размера m на n, каждый элемент в массиве находится по формуле A=m+n.
+
+// int [,] Create2DArray(int colums, int rows)   // ,-  указывает что массив двумерный, colums - столбы, rows - строки
 // {
-//     int[,] new2DArray = new int[rows,columns];
-//     for(int i = 0; i < rows; i++)
+//     int[,] newArray = new int [rows, colums]; // выделение места под массив, размер массива указывается столбцы на строки
+//     for (int a = 0; a < rows; a++)  // перемещение по рядам;
 //     {
-//         for( int j = 0; j < columns; j++)
+//         for (int b = 0; b < colums; b++) // перемещение по строкам
 //         {
-//             new2DArray[i,j] = i + j;
-//         }
-//     }
-//     return new2DArray;
-// }
-
-// void print2DRandomArray(int[,] array)
-// {
-//     for(int i = 0; i < array.GetLength(0); i++)
-//     {
-//         for( int j = 0; j < array.GetLength(1); j++)
-//         {
-//             Console.Write($"{array[i,j]} ");
-//         }
-//         Console.WriteLine("");
-
-//     }
-// }
-
-// Console.WriteLine("Input please rows quantity of 2way array");
-//  int n = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("Input please columns quantity of 2way array");
-//  int m = Convert.ToInt32(Console.ReadLine());
-
-//  int[,] arrayFilled = create2nmArray(n, m);
-//  print2DRandomArray(arrayFilled);
-
-    // Task3
-
-// int[,] create2DRandomArray(int rows, int columns, int minValue, int maxValue)
-// {
-//     int[,] new2DArray = new int[rows,columns];
-//     for(int i = 0; i < rows; i++)
-//     {
-//         for( int j = 0; j < columns; j++)
-//         {
-//             new2DArray[i,j] = new Random().Next(minValue, maxValue+1);
+//             newArray[a, b] = a+b; // a и b - индексы расположения элемента
 //         }
 //     }
-//     return new2DArray;
-// }
+//     return newArray;
+// }   // Метод для создания и заполнения двумерного массива
 
-// int[,] replaceIfEvenIndex(int[,] array)
+// void Show2dArray(int[,] array)
 // {
-//     for(int i = 0; i < array.GetLength(0); i++)
+//     for (int a = 0; a < array.GetLength(0); a++) // 0 указывает на строку
 //     {
-//         for( int j = 0; j < array.GetLength(1); j++)
+//         for (int b = 0; b < array.GetLength(1); b++) // 1 указывает на столбец
 //         {
-//             if( i %2 == 0 & j %2 == 0)
-//             {array[i,j] =  Convert.ToInt32(Math.Pow(array[i,j],2));};
+//             Console.Write(array[a, b] + " ");   // выводит наш массив в терминал "" указывает на пробел в сообщении
+//         } // функция Write идет прямо по строке, функция WriteLine Начинает идти с новой строки
+//         Console.WriteLine(); // без этой строки массив указывается в одну строку
+//     }
+//     Console.WriteLine("");    // при необходимости вывода более одного массива, создает пространство между массивами.
+// }   // метод для вывода двумерного массива
+
+// Console.WriteLine("Input numbers of rows: ");
+// int rows = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input numbers of colums: ");
+// int colums = Convert.ToInt32(Console.ReadLine());
+
+// Show2dArray(Create2DArray(colums, rows));
+
+// Задача №3 Задайте двумерный массив. НАйдите элементы, у которых оба индексы четные и замените эти элементы на их квадраты
+
+// int [,] Create2DRandomArray(int colums, int rows, int minValue, int maxValue)   // ,-  указывает что массив двумерный, colums - столбы, rows - строки
+// {
+//     int[,] newArray = new int [rows, colums]; // выделение места под массив, размер массива указывается столбцы на строки
+//     for (int a = 0; a < rows; a++)  // перемещение по рядам;
+//     {
+//         for (int b = 0; b < colums; b++) // перемещение по строкам
+//         {
+//             newArray[a, b] = new Random().Next(minValue, maxValue+1);
+//         }
+//     }
+//     return newArray;
+// }   // Метод для создания и заполнения двумерного массива
+    
+// void Show2dArray(int[,] array)
+// {
+//     for (int a = 0; a < array.GetLength(0); a++) // 0 указывает на строку
+//     {
+//         for (int b = 0; b < array.GetLength(1); b++) // 1 указывает на столбец
+//         {
+//             Console.Write(array[a, b] + " ");   // выводит наш массив в терминал "" указывает на пробел в сообщении
+//         } // функция Write идет прямо по строке, функция WriteLine Начинает идти с новой строки
+//         Console.WriteLine(); // без этой строки массив указывается в одну строку
+//     }
+//     Console.WriteLine("");    // при необходимости вывода более одного массива, создает пространство между массивами.
+// }   // метод для вывода двумерного массива
+
+// int[,] FindNum(int[,]array)
+// {
+//     for(int a = 0; a < array.GetLength(0); a++) //передвигаемся по трокам
+//     {
+//         for(int b = 0; b < array.GetLength(1); b++) // передвигаемся по столбцам
+//         {
+//             if (a % 2 == 0 && b % 2 == 0) // определяем четность элементов а и b
+//             {
+//                 array[a, b] *= array[a, b]; //  если выполняется условие, возводим в квадрат
+//                 // array[b] *= array[b];
+//             }
 //         }
 //     }
 //     return array;
 // }
 
-// void print2DRandomArray(int[,] array)
+// Console.WriteLine("Input numbers of rows: ");
+// int rows = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input numbers of colums: ");
+// int colums = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input minimal value of array element");
+// int minValue = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input maximal value of array element");
+// int maxValue = Convert.ToInt32(Console.ReadLine());
+
+// int[,] MyArray = Create2DRandomArray(colums, rows, minValue, maxValue);
+// Console.WriteLine();
+// Show2dArray(MyArray);
+// Console.WriteLine();
+// FindNum(MyArray);
+// Console.WriteLine();
+// Show2dArray(MyArray);
+
+
+
+// Задача № 4 Задайте двумерный массив. Найдите сумму элементов, находящихся на главной диагонали (индексы 0,0 1,1 2,2)
+
+// int [,] Create2DArray(int colums, int rows, int minValue, int maxValue)   // ,-  указывает что массив двумерный, colums - столбы, rows - строки
 // {
-//     for(int i = 0; i < array.GetLength(0); i++)
+//     int[,] newArray = new int [rows, colums]; // выделение места под массив, размер массива указывается столбцы на строки
+//     for (int a = 0; a < rows; a++)  // перемещение по рядам;
 //     {
-//         for( int j = 0; j < array.GetLength(1); j++)
+//         for (int b = 0; b < colums; b++) // перемещение по строкам
 //         {
-//             Console.Write($"{array[i,j]} ");
-//         }
-//         Console.WriteLine("");
-
-//     }
-// }
-
-// Console.WriteLine("Input please rows quantity of 2way array");
-// int n = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("Input please columns quantity of 2way array");
-// int m = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("Input please minimum number of 2way array");
-// int min = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("Input please maximum number of 2way array");
-// int max = Convert.ToInt32(Console.ReadLine());
-
-// int[,] arrayFilled = create2DRandomArray(n, m, min, max);
-// print2DRandomArray(arrayFilled);
-// replaceIfEvenIndex(arrayFilled);
-// print2DRandomArray(arrayFilled);
-
-    // Task4
-
-// int[,] create2DRandomArray(int rows, int columns, int minValue, int maxValue)
-// {
-//     int[,] new2DArray = new int[rows,columns];
-//     for(int i = 0; i < rows; i++)
-//     {
-//         for( int j = 0; j < columns; j++)
-//         {
-//             new2DArray[i,j] = new Random().Next(minValue, maxValue+1);
+//             newArray[a, b] = new Random().Next(minValue, maxValue+1);
 //         }
 //     }
-//     return new2DArray;
-// }
-
-// void sumOfDiagonale(int[,] array)
+//     return newArray;
+// }   // Метод для создания и заполнения двумерного массива
+    
+// void Show2dArray(int[,] array)
 // {
-//     int totsum = 0;
-//     for(int i = 0; i < array.GetLength(0); i++)
+//     for (int a = 0; a < array.GetLength(0); a++) // 0 указывает на строку
 //     {
-//         totsum += array[i,i];
-//     }
-//      Console.WriteLine($"Summarize of elements on the main diagonale is {totsum}");
-// }
-
-// void print2DRandomArray(int[,] array)
-// {
-//     for(int i = 0; i < array.GetLength(0); i++)
-//     {
-//         for( int j = 0; j < array.GetLength(1); j++)
+//         for (int b = 0; b < array.GetLength(1); b++) // 1 указывает на столбец
 //         {
-//             Console.Write($"{array[i,j]} ");
-//         }
-//         Console.WriteLine("");
-
+//             Console.Write(array[a, b] + " ");   // выводит наш массив в терминал "" указывает на пробел в сообщении
+//         } // функция Write идет прямо по строке, функция WriteLine Начинает идти с новой строки
+//         Console.WriteLine(); // без этой строки массив указывается в одну строку
 //     }
+//     Console.WriteLine("");    // при необходимости вывода более одного массива, создает пространство между массивами.
+// }   // метод для вывода двумерного массива
+
+// int FindMainDiagonal(int[,]array)
+// {
+//     int sum = 0;
+//     for (int a = 0; a < array.GetLength(0); a++) //передвигаемся по трокам
+//     {
+//         for (int b = 0; b < array.GetLength(1); b++) // передвигаемся по столбцам
+//         {
+//             if (a == b) sum = array[a, b] + sum;
+//         }
+//     }
+//     return sum;
 // }
 
-// Console.WriteLine("Input please rows quantity of 2way array");
-// int n = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("Input please columns quantity of 2way array");
-// int m = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("Input please minimum number of 2way array");
-// int min = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("Input please maximum number of 2way array");
-// int max = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input numbers of rows: ");
+// int rows = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input numbers of colums: ");
+// int colums = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input minimal value of array element");
+// int minValue = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input maximal value of array element");
+// int maxValue = Convert.ToInt32(Console.ReadLine());
 
-// int[,] arrayFilled = create2DRandomArray(n, m, min, max);
-// print2DRandomArray(arrayFilled);
-// sumOfDiagonale(arrayFilled);
+// int[,] MyArray = Create2DArray(colums, rows, minValue, maxValue);
+// Show2dArray(MyArray);
+// FindMainDiagonal(MyArray); // ошибка
+// Console.WriteLine(FindMainDiagonal(MyArray));

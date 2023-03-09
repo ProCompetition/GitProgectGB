@@ -1,0 +1,15 @@
+E:\Вадим Обучение\Git Progect\GitProgectGB\GitSeminars\Seminars\Seminar_7\obj\Debug\net6.0\Seminar_7.csproj.AssemblyReference.cache
+E:\Вадим Обучение\Git Progect\GitProgectGB\GitSeminars\Seminars\Seminar_7\obj\Debug\net6.0\Seminar_7.GeneratedMSBuildEditorConfig.editorconfig
+E:\Вадим Обучение\Git Progect\GitProgectGB\GitSeminars\Seminars\Seminar_7\obj\Debug\net6.0\Seminar_7.AssemblyInfoInputs.cache
+E:\Вадим Обучение\Git Progect\GitProgectGB\GitSeminars\Seminars\Seminar_7\obj\Debug\net6.0\Seminar_7.AssemblyInfo.cs
+E:\Вадим Обучение\Git Progect\GitProgectGB\GitSeminars\Seminars\Seminar_7\obj\Debug\net6.0\Seminar_7.csproj.CoreCompileInputs.cache
+E:\Вадим Обучение\Git Progect\GitProgectGB\GitSeminars\Seminars\Seminar_7\bin\Debug\net6.0\Seminar_7.exe
+E:\Вадим Обучение\Git Progect\GitProgectGB\GitSeminars\Seminars\Seminar_7\bin\Debug\net6.0\Seminar_7.deps.json
+E:\Вадим Обучение\Git Progect\GitProgectGB\GitSeminars\Seminars\Seminar_7\bin\Debug\net6.0\Seminar_7.runtimeconfig.json
+E:\Вадим Обучение\Git Progect\GitProgectGB\GitSeminars\Seminars\Seminar_7\bin\Debug\net6.0\Seminar_7.dll
+E:\Вадим Обучение\Git Progect\GitProgectGB\GitSeminars\Seminars\Seminar_7\bin\Debug\net6.0\Seminar_7.pdb
+E:\Вадим Обучение\Git Progect\GitProgectGB\GitSeminars\Seminars\Seminar_7\obj\Debug\net6.0\Seminar_7.dll
+E:\Вадим Обучение\Git Progect\GitProgectGB\GitSeminars\Seminars\Seminar_7\obj\Debug\net6.0\refint\Seminar_7.dll
+E:\Вадим Обучение\Git Progect\GitProgectGB\GitSeminars\Seminars\Seminar_7\obj\Debug\net6.0\Seminar_7.pdb
+E:\Вадим Обучение\Git Progect\GitProgectGB\GitSeminars\Seminars\Seminar_7\obj\Debug\net6.0\Seminar_7.genruntimeconfig.cache
+E:\Вадим Обучение\Git Progect\GitProgectGB\GitSeminars\Seminars\Seminar_7\obj\Debug\net6.0\ref\Seminar_7.dll
